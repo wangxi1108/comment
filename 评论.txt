@@ -1,0 +1,12 @@
+1、安装 express-session
+	:npm install --save express-session
+2、安装ejs 模板引擎
+	:npm install --save ejs
+3、node处理表单请求，需要用到formidable包。安装formidable包的命令如下：
+ 
+npm install formidable
+
+
+
+安装：npm i --save socket.io
+	：npm i express --save

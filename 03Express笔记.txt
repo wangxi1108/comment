@@ -1,0 +1,68 @@
+1、express 命令生成器
+
+全局安装：$ npm install express-generator -g
+项目安装express
+	:express -e
+执行： cd . && npm install
+启动： npm start
+然后打开：
+http://localhost:3000，出现express即安装成功。
+
+
+2、安装 mysql
+	npm install mysql --save
+
+
+命令 cd 是跳转到那个文件夹
+
+
+一、Express
+
+上课的：
+1、在项目里 npm init
+2、安装express: npm i --save express
+3、在app.js里面写入内容，创建服务。在网页用 localhost打开测试
+4、安装 body-parser - node.js 中间件，用于处理 JSON, Raw, Text 和 URL 编码的数据。
+   ： cnpm install body-parser --save
+   把中间件写入app.js里面。
+5、写login.html用户登录页面，用bootstrop,百度资源共享....
+
+6、启动运行 ：node app.js
+	http://localhost:8090/login.html
+
+7、安装刷新件
+	：npm install -g supervisor
+	启动： supervisor app.js
+(  8、安装断点调试：
+	npm install -g node-inspector (node 6.x）
+	然后：node --debug-brk app.js
+   9、再新开cmd，输入node-inspector & ，
+	执行成功后会显示一个地址，使用浏览器打开这个地址，
+	浏览器需要是Chrome。)
+
+或者直接：
+	chrome://flags/#enable-devtools-experimentso 点击开启---再重启
+	node --inspect app.js ---- F12 选中source---点击右边的connect 
+
+
+二、工具
+
+I、Bootstrop的运用
+	1、进入官网，起步选项里，选择复制入口link文件,放在自己的html里面。
+	2、在 全局CSS样式里可以寻找要得东西，eg: 栅格系统，排版，表单，less，sass等
+
+II：百度静态资源共享库
+	进入，然后搜索要得东西，eg: jquery，复制链接，插在script里面。
+
+
+
+三、mongoose链接数据库
+
+1、安装：npm i mongoose --save
+
+四、模板渲染
+
+1、安装ejs  :npm i 
+2、安装 session 
+
+看自己电脑IP: ipconfig  ... 显示信息
