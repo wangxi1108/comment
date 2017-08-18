@@ -1,68 +1,56 @@
-1¡¢express ÃüÁîÉú³ÉÆ÷
+1ã€express å‘½ä»¤ç”Ÿæˆå™¨
 
-È«¾Ö°²×°£º$ npm install express-generator -g
-ÏîÄ¿°²×°express
+å…¨å±€å®‰è£…ï¼š$ npm install express-generator -g
+é¡¹ç›®å®‰è£…express
 	:express -e
-Ö´ĞĞ£º cd . && npm install
-Æô¶¯£º npm start
-È»ºó´ò¿ª£º
-http://localhost:3000£¬³öÏÖexpress¼´°²×°³É¹¦¡£
+æ‰§è¡Œï¼š cd . && npm install
+å¯åŠ¨ï¼š npm start
+ç„¶åæ‰“å¼€ï¼š
+http://localhost:3000ï¼Œå‡ºç°expresså³å®‰è£…æˆåŠŸã€‚
 
 
-2¡¢°²×° mysql
+2ã€å®‰è£… mysql
 	npm install mysql --save
 
 
-ÃüÁî cd ÊÇÌø×ªµ½ÄÇ¸öÎÄ¼ş¼Ğ
+å‘½ä»¤ cd æ˜¯è·³è½¬åˆ°é‚£ä¸ªæ–‡ä»¶å¤¹
 
 
-Ò»¡¢Express
+ä¸€ã€Express
 
-ÉÏ¿ÎµÄ£º
-1¡¢ÔÚÏîÄ¿Àï npm init
-2¡¢°²×°express: npm i --save express
-3¡¢ÔÚapp.jsÀïÃæĞ´ÈëÄÚÈİ£¬´´½¨·şÎñ¡£ÔÚÍøÒ³ÓÃ localhost´ò¿ª²âÊÔ
-4¡¢°²×° body-parser - node.js ÖĞ¼ä¼ş£¬ÓÃÓÚ´¦Àí JSON, Raw, Text ºÍ URL ±àÂëµÄÊı¾İ¡£
-   £º cnpm install body-parser --save
-   °ÑÖĞ¼ä¼şĞ´Èëapp.jsÀïÃæ¡£
-5¡¢Ğ´login.htmlÓÃ»§µÇÂ¼Ò³Ãæ£¬ÓÃbootstrop,°Ù¶È×ÊÔ´¹²Ïí....
+1ã€åœ¨é¡¹ç›®é‡Œ npm init
+2ã€å®‰è£…express: npm i --save express
+3ã€åœ¨app.jsé‡Œé¢å†™å…¥å†…å®¹ï¼Œåˆ›å»ºæœåŠ¡ã€‚åœ¨ç½‘é¡µç”¨ localhostæ‰“å¼€æµ‹è¯•
+4ã€å®‰è£… body-parser - node.js ä¸­é—´ä»¶ï¼Œç”¨äºå¤„ç† JSON, Raw, Text å’Œ URL ç¼–ç çš„æ•°æ®ã€‚
+   ï¼š cnpm install body-parser --save
+   æŠŠä¸­é—´ä»¶å†™å…¥app.jsé‡Œé¢ã€‚
+5ã€å†™login.htmlç”¨æˆ·ç™»å½•é¡µé¢ï¼Œç”¨bootstrop,ç™¾åº¦èµ„æºå…±äº«....
 
-6¡¢Æô¶¯ÔËĞĞ £ºnode app.js
+6ã€å¯åŠ¨è¿è¡Œ ï¼šnode app.js
 	http://localhost:8090/login.html
 
-7¡¢°²×°Ë¢ĞÂ¼ş
-	£ºnpm install -g supervisor
-	Æô¶¯£º supervisor app.js
-(  8¡¢°²×°¶Ïµãµ÷ÊÔ£º
-	npm install -g node-inspector (node 6.x£©
-	È»ºó£ºnode --debug-brk app.js
-   9¡¢ÔÙĞÂ¿ªcmd£¬ÊäÈënode-inspector & £¬
-	Ö´ĞĞ³É¹¦ºó»áÏÔÊ¾Ò»¸öµØÖ·£¬Ê¹ÓÃä¯ÀÀÆ÷´ò¿ªÕâ¸öµØÖ·£¬
-	ä¯ÀÀÆ÷ĞèÒªÊÇChrome¡£)
+7ã€å®‰è£…åˆ·æ–°ä»¶
+	ï¼šnpm install -g supervisor
+	å¯åŠ¨ï¼š supervisor app.js
+(  8ã€å®‰è£…æ–­ç‚¹è°ƒè¯•ï¼š
+	npm install -g node-inspector (node 6.xï¼‰
+	ç„¶åï¼šnode --debug-brk app.js
+   9ã€å†æ–°å¼€cmdï¼Œè¾“å…¥node-inspector & ï¼Œ
+	æ‰§è¡ŒæˆåŠŸåä¼šæ˜¾ç¤ºä¸€ä¸ªåœ°å€ï¼Œä½¿ç”¨æµè§ˆå™¨æ‰“å¼€è¿™ä¸ªåœ°å€ï¼Œ
+	æµè§ˆå™¨éœ€è¦æ˜¯Chromeã€‚)
 
-»òÕßÖ±½Ó£º
-	chrome://flags/#enable-devtools-experimentso µã»÷¿ªÆô---ÔÙÖØÆô
-	node --inspect app.js ---- F12 Ñ¡ÖĞsource---µã»÷ÓÒ±ßµÄconnect 
-
-
-¶ş¡¢¹¤¾ß
-
-I¡¢BootstropµÄÔËÓÃ
-	1¡¢½øÈë¹ÙÍø£¬Æğ²½Ñ¡ÏîÀï£¬Ñ¡Ôñ¸´ÖÆÈë¿ÚlinkÎÄ¼ş,·ÅÔÚ×Ô¼ºµÄhtmlÀïÃæ¡£
-	2¡¢ÔÚ È«¾ÖCSSÑùÊ½Àï¿ÉÒÔÑ°ÕÒÒªµÃ¶«Î÷£¬eg: Õ¤¸ñÏµÍ³£¬ÅÅ°æ£¬±íµ¥£¬less£¬sassµÈ
-
-II£º°Ù¶È¾²Ì¬×ÊÔ´¹²Ïí¿â
-	½øÈë£¬È»ºóËÑË÷ÒªµÃ¶«Î÷£¬eg: jquery£¬¸´ÖÆÁ´½Ó£¬²åÔÚscriptÀïÃæ¡£
+æˆ–è€…ç›´æ¥ï¼š
+	chrome://flags/#enable-devtools-experimentso
+ ç‚¹å‡»å¼€å¯---å†é‡å¯
+	node --inspect app.js ---- F12 é€‰ä¸­source---ç‚¹å‡»å³è¾¹çš„connect 
 
 
+äºŒã€mongooseé“¾æ¥æ•°æ®åº“
+1ã€å®‰è£…ï¼šnpm i mongoose --save
 
-Èı¡¢mongooseÁ´½ÓÊı¾İ¿â
+ä¸‰ã€æ¨¡æ¿æ¸²æŸ“
 
-1¡¢°²×°£ºnpm i mongoose --save
+1ã€å®‰è£…ejs  :npm i 
+2ã€å®‰è£… session 
 
-ËÄ¡¢Ä£°åäÖÈ¾
-
-1¡¢°²×°ejs  :npm i 
-2¡¢°²×° session 
-
-¿´×Ô¼ºµçÄÔIP: ipconfig  ... ÏÔÊ¾ĞÅÏ¢
+çœ‹è‡ªå·±ç”µè„‘IP: ipconfig  ... æ˜¾ç¤ºä¿¡æ¯
